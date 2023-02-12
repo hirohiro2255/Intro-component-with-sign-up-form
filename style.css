@@ -112,6 +112,10 @@ h1, p {
   border-radius: 5px;
 }
 
+.input-error {
+  outline: 2px solid var(--primary-red);
+}
+
 .form-control img {
   position: absolute;
   top: -0.05rem;
@@ -172,4 +176,31 @@ h1, p {
 
 .conditional-statement-link:hover {
   opacity: 0.8;
+}
+
+@media (min-width: 1024px) {
+  .container {
+    display: flex;
+    max-width: 1110px;
+    margin-top: calc((100vw * 0.01) * 8.6px);
+    margin-right: calc((100vw * 0.01) * 11.4px);
+    margin-left: calc((100vw * 0.01) * 11.4px);
+    align-items: center;
+    justify-content: space-evenly;
+  }
+
+  .title-container {
+    max-width: 525px;
+    text-align: left;
+  }
+
+  .form-container {
+    margin-top: 0px;
+    width: 48.6%;
+    max-width: 540px;
+  }
+
+  .form-header {
+    height: 60px;
+  }
 }
